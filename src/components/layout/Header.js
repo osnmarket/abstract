@@ -7,7 +7,7 @@ import {
   HStack,
   Input,
   Text,
-  VStack
+  VStack,
 } from '@chakra-ui/react';
 import { Categories } from '@components/func/lists/Categories';
 

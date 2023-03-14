@@ -6,7 +6,7 @@ import {
   Stat,
   StatLabel,
   StatNumber,
-  useColorModeValue
+  useColorModeValue,
 } from '@chakra-ui/react';
 import { BsPerson } from 'react-icons/bs';
 import { FiServer } from 'react-icons/fi';
@@ -21,7 +21,8 @@ function StatsCard(props) {
       shadow={'xl'}
       border={'1px solid'}
       borderColor={useColorModeValue('gray.800', 'gray.500')}
-      rounded={'lg'}>
+      rounded={'lg'}
+    >
       <Flex justifyContent={'space-between'}>
         <Box pl={{ base: 2, md: 4 }}>
           <StatLabel fontWeight={'medium'} isTruncated>
@@ -34,7 +35,8 @@ function StatsCard(props) {
         <Box
           my={'auto'}
           color={useColorModeValue('gray.800', 'gray.200')}
-          alignContent={'center'}>
+          alignContent={'center'}
+        >
           {icon}
         </Box>
       </Flex>
@@ -49,8 +51,9 @@ export default function BasicStatistics() {
         textAlign={'center'}
         fontSize={'4xl'}
         py={10}
-        fontWeight={'bold'}>
-        {'Take a look at how much we\'ve grown!'}
+        fontWeight={'bold'}
+      >
+        {"Take a look at how much we've grown!"}
       </chakra.h1>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
         <StatsCard
