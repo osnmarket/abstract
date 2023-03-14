@@ -1,6 +1,6 @@
 import { Container, HStack, Stack } from '@chakra-ui/react';
 
-export const DocLayout = ({ children, sidebarContent, category }) => {
+export const DocLayout = ({ children }) => {
   return (
     <Stack>
       <Container maxW={'container.xl'}>

@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react';
 import { Categories } from '@components/func/lists/Categories';
 
-export const Header = ({ active }) => (
+export const Header = () => (
   <Box bgColor={colors.secondary} h={112}>
     <Container variant={'fluid'} minW={'container.xl'} h={'100%'}>
       <VStack h={'100%'}>

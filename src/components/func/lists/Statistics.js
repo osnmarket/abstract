@@ -50,7 +50,7 @@ export default function BasicStatistics() {
         fontSize={'4xl'}
         py={10}
         fontWeight={'bold'}>
-        Take a look at how much we've grown!
+        {'Take a look at how much we\'ve grown!'}
       </chakra.h1>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
         <StatsCard
