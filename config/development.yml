@@ -1,0 +1,40 @@
+providers:
+  keycloak:
+    identifier_key: client_id
+    password_key: client_secret
+    token_type: Bearer
+    token_key: access_token
+    authentication_path: /{realm}/auth/token
+    authorization_key: Authorization
+  strapi:
+    identifier_key: identifier
+    password_key: password
+    token_type: Bearer
+    token_key: jwt
+    authentication_path: /auth/local
+    authorization_key: Authorization
+    authentication_via_form: true
+  auth0:
+    identifier_key: client_id
+    password_key: client_secret
+    token_type: Bearer
+    token_key: access_token
+    authorization_key: Authorization
+app:
+  docs:
+    provider: strapi
+  shop:
+    provider: auth0
+    authentication_path: /x-login
+    authorization_key: X-Auth-Token
+  andando:
+    provider: custom
+    authentication_path: /x-login
+    authentication_via_form: false
+    token_type: Bearer
+    token_key: access_token
+  apigee:
+    provider: keycloak
+    authentication_path: /login
+
+caching_sytem: nodeCache

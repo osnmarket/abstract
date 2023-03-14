@@ -1,0 +1,5 @@
+.yarn
+.next
+.history
+dist
+node_modules
