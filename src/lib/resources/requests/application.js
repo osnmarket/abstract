@@ -33,6 +33,7 @@ export const Application = {
         authorization: {
           [provider_configs.authorization_key]: token,
         },
+        authorization_key: provider_configs.authorization_key
       };
 
       return target;

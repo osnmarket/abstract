@@ -1,11 +1,11 @@
-import { colors } from '@/theme';
 import {
   Alert,
   AlertDescription,
   AlertIcon,
   AlertTitle,
-  Spinner,
+  Spinner
 } from '@chakra-ui/react';
+import { colors } from '@theme';
 
 export const ErrorComponent = () => {
   return (

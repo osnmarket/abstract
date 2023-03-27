@@ -1,4 +1,3 @@
-import { colors, messages } from '@/theme';
 import {
   Box,
   Button,
@@ -7,9 +6,10 @@ import {
   HStack,
   Input,
   Text,
-  VStack,
+  VStack
 } from '@chakra-ui/react';
 import { Categories } from '@components/func/lists/Categories';
+import { colors, messages } from '@theme';
 
 export const Header = () => (
   <Box bgColor={colors.secondary} h={112}>

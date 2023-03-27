@@ -2,9 +2,14 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
+      "@theme": ["./src/theme.js"],
       "@components/*": ["./src/components/*"],
-      "@utils/*": ["./src/lib/utils/*"]
+      "@resources/*": [
+        "./src/lib/resources/config/*",
+        "./src/lib/resources/requests/*"
+      ],
+      "@utils/*": ["./src/lib/utils/*"],
+      "@abstract-handlers": ["./src/lib/handlers/index.js"],
     }
   }
 }

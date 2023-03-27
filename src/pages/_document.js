@@ -17,7 +17,7 @@ export default function Document() {
         {/* 👇 Here's the script */}
         <ColorModeScript />
         <Main />
-        <NextScript />w
+        <NextScript />
       </body>
     </Html>
   );
