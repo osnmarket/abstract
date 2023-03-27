@@ -20,7 +20,7 @@ export const serverFetch = async ({
   url,
   options = { method: 'get' },
   target = process.env.NEXT_PUBLIC_DEFAULT_TARGET,
-  user_token
+  user_token,
 }) => {
   try {
     const targeted_api = await Application.getApiConfigs(target);
@@ -31,9 +31,11 @@ export const serverFetch = async ({
     if (configs.is_application_building || req_method.includes('get')) {
       const { data } = await axios.get(destination_url, {
         headers: {
-          ...(user_token ? `${targeted_api.authorization_key} ${user_token}` : targeted_api.authorization),
-          ...options.headers
-        }
+          ...(user_token
+            ? `${targeted_api.authorization_key} ${user_token}`
+            : targeted_api.authorization),
+          ...options.headers,
+        },
       });
 
       return data;
@@ -41,9 +43,11 @@ export const serverFetch = async ({
       const requester = axios[options.axs_method || req_method];
       const { data } = await requester(destination_url, options.body, {
         headers: {
-          ...(user_token ? `${targeted_api.authorization_key} ${user_token}` : targeted_api.authorization),
-          ...options.headers
-        }
+          ...(user_token
+            ? `${targeted_api.authorization_key} ${user_token}`
+            : targeted_api.authorization),
+          ...options.headers,
+        },
       });
 
       return data;

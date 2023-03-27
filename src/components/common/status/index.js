@@ -3,7 +3,7 @@ import {
   AlertDescription,
   AlertIcon,
   AlertTitle,
-  Spinner
+  Spinner,
 } from '@chakra-ui/react';
 import { colors } from '@theme';
 

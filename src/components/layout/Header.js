@@ -6,7 +6,7 @@ import {
   HStack,
   Input,
   Text,
-  VStack
+  VStack,
 } from '@chakra-ui/react';
 import { Categories } from '@components/func/lists/Categories';
 import { colors, messages } from '@theme';

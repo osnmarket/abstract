@@ -9,7 +9,7 @@
         "./src/lib/resources/requests/*"
       ],
       "@utils/*": ["./src/lib/utils/*"],
-      "@abstract-handlers": ["./src/lib/handlers/index.js"],
+      "@abstract-handlers": ["./src/lib/handlers/index.js"]
     }
   }
 }

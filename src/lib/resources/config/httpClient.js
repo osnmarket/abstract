@@ -94,8 +94,9 @@ export const service_account_login = async ({
       body
     );
 
-    const application_token = `${application.token_type} ${data[application.token_key]
-      }`;
+    const application_token = `${application.token_type} ${
+      data[application.token_key]
+    }`;
 
     await CachingSystem({
       store: application_token,
@@ -113,7 +114,7 @@ export const fetcher = async ({
   uri,
   target = process.env.NEXT_PUBLIC_DEFAULT_TARGET,
   options = { method: 'get' },
-  user_token
+  user_token,
 }) => {
   try {
     // TODO reroute client side requests
