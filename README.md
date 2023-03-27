@@ -6,17 +6,17 @@ A brief description of what this project does and who it's for
 
 ## Installation
 
-Install my-project with npm
+Install my-project with npx
 
 ```bash
-  npm install my-project
+  npx create-next-abstract my-project
   cd my-project
 ```
 
 ## Features
 
-- Light/dark mode toggle
-- Live previews
+- Client and Server side fetcher
+- Multi Backend support
 - Fullscreen mode
 - Cross platform
 
@@ -24,30 +24,50 @@ Install my-project with npm
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`API_KEY`
+##### Base Configs
 
-`ANOTHER_API_KEY`
+| Category                     | Description                                                |
+| :--------------------------- | :--------------------------------------------------------- |
+| `NEXT_PUBLIC_SITENAME`       | Your site name                                             |
+| `NEXT_PUBLIC_LOCAL_URL`      | `Link` of your local site                                  |
+| `NEXT_PUBLIC_IMG_SERVER`     | `Link` of your asset server                                |
+| `NEXT_PUBLIC_DEFAULT_TARGET` | Default backend to be targetted                            |
+| `TOKEN_LIFETIME`             | Time a token have to staty in cache                        |
+| `PROXY_ROUTE`                | Define if you want to change your default dispatcher route |
+| `REDIS_URL`                  | `Link` of redis server                                     |
+
+##### Backend Configs
+
+| Category             | Description                        |
+| :------------------- | :--------------------------------- |
+| `MYBACK_BACKEND_URL` | `Link` of your backend server      |
+| `MYBACK_IDENTIFIER`  | `CRED` client_id                   |
+| `MYBACK_PASSWORD`    | `CRED` client_secret               |
+| `MYBACK_GRANT_TYPE`  | `OPT` grant_type of your backend   |
+| `MYBACK_SCOPE`       | `OPT` scope of your backend server |
 
 ## Running Tests
 
 To run tests, run the following command
 
 ```bash
-  npm run test
+  yarn test
 ```
 
 ## Tech Stack
 
-**Client:** React, Redux, TailwindCSS
+**Client:** React, Next.js, ChakraUI
 
-**Server:** Node, Express
+**Server:** Node
 
 ## Used By
 
-This project is used by the following companies:
+This project is used by the following projects:
 
-- Company 1
-- Company 2
+- [E-Shop Orange](https://boutique.orange.sn)
+- [Portal Orange](https://orange.sn)
+- [API Documentation Orange](https://developer.orange-sonatel.com)
+- [API Console Orange](https://developer.orange-sonatel.com)
 
 ## Contributing
 
@@ -62,7 +82,7 @@ Please adhere to this project's `code of conduct`.
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/osnmarket/abstract.git
 ```
 
 Go to the project directory
@@ -74,13 +94,13 @@ Go to the project directory
 Install dependencies
 
 ```bash
-  npm install
+  yarn
 ```
 
 Start the server
 
 ```bash
-  npm run start
+  yarn dev
 ```
 
 ## Roadmap
@@ -91,7 +111,7 @@ Start the server
 
 ## Authors
 
-- [@octokatherine](https://www.github.com/octokatherine)
+- [@LPIX-11](https://www.github.com/LPIX-11)
 
 ## License
 
@@ -99,4 +119,4 @@ Start the server
 
 ## Feedback
 
-If you have any feedback, please reach out to us at fake@fake.com
+If you have any feedback, please reach out to us at teamb2c@orange-sonatel.com
