@@ -1,4 +1,4 @@
-import { abstractHandler } from '@abstract-handlers';
+import { abstractHandler } from 'abstract-core/handlers';
 
 export default async function handler(req, res) {
   abstractHandler(req, res);
