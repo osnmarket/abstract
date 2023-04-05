@@ -8,7 +8,7 @@
         "./src/lib/resources/config/*",
         "./src/lib/resources/requests/*"
       ],
-      "@utils/*": ["./src/lib/utils/*"],
+      "@utils/*": ["./src/lib/utils/*"]
     }
   }
 }
