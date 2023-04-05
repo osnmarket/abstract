@@ -8,8 +8,7 @@
         "./src/lib/resources/config/*",
         "./src/lib/resources/requests/*"
       ],
-      "@utils/*": ["./src/lib/utils/*"],
-      "@abstract-handlers": ["./src/lib/handlers/index.js"]
+      "@utils/*": ["./src/lib/utils/*"]
     }
   }
 }

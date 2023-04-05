@@ -1,6 +1,6 @@
 const { themeColors } = require('./theme/colors');
 const { themeImages } = require('./theme/images');
-const { themeMessages } = require('./theme/messges');
+const { themeMessages } = require('./theme/messages');
 
 module.exports = {
   name: 'Theming File',
