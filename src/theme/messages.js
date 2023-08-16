@@ -4,8 +4,8 @@ module.exports = {
     pages: {},
     components: {
       header: {
-        sitename: 'Next.js Abstract'
-      }
+        sitename: 'Next.js Abstract',
+      },
     },
   },
 };

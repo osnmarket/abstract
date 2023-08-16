@@ -23,7 +23,10 @@ export const Header = () => (
         >
           <HStack alignItems={'center'} w={'50%'}>
             <Text fontWeight={'bold'} fontSize={25}>
-              <Highlight query={'Abstract'} styles={{ color: colors.primary.regular }}>
+              <Highlight
+                query={'Abstract'}
+                styles={{ color: colors.primary.regular }}
+              >
                 {messages.components.header.sitename}
               </Highlight>
             </Text>
