@@ -1,14 +1,19 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
-      "@theme": ["./src/theme.js"],
-      "@components/*": ["./src/components/*"],
+      "@theme": ["./theme.js"],
+      "@components/*": ["./components/*"],
       "@resources/*": [
-        "./src/lib/resources/config/*",
-        "./src/lib/resources/requests/*"
+        "./lib/resources/config/*",
+        "./lib/resources/requests/*"
       ],
-      "@utils/*": ["./src/lib/utils/*"]
+      "@helpers": ["./lib/helpers/index.js"],
+      "@hooks": ["./lib/utils/hooks/index.js"],
+      "@utils/*": ["./lib/utils/*"],
+      "@services/*": ["./lib/services/*"],
+      "@handlers": ["./lib/handlers/index.js"],
+      "@schemas": ["./lib/utils/schemas/index.js"]
     }
   }
 }

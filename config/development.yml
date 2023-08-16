@@ -21,20 +21,8 @@ providers:
     token_key: access_token
     authorization_key: Authorization
 app:
-  docs:
-    provider: strapi
-  shop:
+  backend:
     provider: auth0
-    authentication_path: /x-login
-    authorization_key: X-Auth-Token
-  andando:
-    provider: custom
-    authentication_path: /x-login
-    authentication_via_form: false
-    token_type: Bearer
-    token_key: access_token
-  apigee:
-    provider: keycloak
-    authentication_path: /login
+    authentication_path: /x-login/appserver
 
 caching_sytem: nodeCache

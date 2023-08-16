@@ -12,7 +12,7 @@ import { Categories } from '@components/func/lists/Categories';
 import { colors, messages } from '@theme';
 
 export const Header = () => (
-  <Box bgColor={colors.secondary} h={112}>
+  <Box bgColor={colors.secondary.regular} h={112}>
     <Container variant={'fluid'} minW={'container.xl'} h={'100%'}>
       <VStack h={'100%'}>
         <HStack
@@ -23,7 +23,7 @@ export const Header = () => (
         >
           <HStack alignItems={'center'} w={'50%'}>
             <Text fontWeight={'bold'} fontSize={25}>
-              <Highlight query={'Abstract'} styles={{ color: colors.primary }}>
+              <Highlight query={'Abstract'} styles={{ color: colors.primary.regular }}>
                 {messages.components.header.sitename}
               </Highlight>
             </Text>
@@ -40,7 +40,7 @@ export const Header = () => (
           </HStack>
           <HStack alignItems={'center'}>
             <Box>
-              <Text color={colors.primary} fontSize={14}>
+              <Text color={colors.primary.regular} fontSize={14}>
                 Create an account
               </Text>
             </Box>
