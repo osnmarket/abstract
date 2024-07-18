@@ -17,32 +17,34 @@ const randomStringFromEnum = (enumeration) => {
  * @param {object} sample
  * @param {number} size
  * @returns {array}
-*/
+ */
 export const useMockedData = ({ sample, size }) => {
   const [mockedData, setMockedData] = useState([]);
 
   useEffect(() => {
-    const mockedData = Array(size || 1).fill(null).map(() => {
-      const newMock = { ...sample.data };
+    const mockedData = Array(size || 1)
+      .fill(null)
+      .map(() => {
+        const newMock = { ...sample.data };
 
-      if (sample.randomize) {
-        for (const rand of sample.randomize) {
-          const { hasSub, key, subKey } = rand
-          if (hasSub) {
-            newMock[key] = {
-              ...newMock[key],
-              [subKey]: randomStringFromEnum(rand.enum),
-            };
-          } else {
-            newMock[rand.key] = rand.enum
-              ? randomStringFromEnum(rand.enum)
-              : randomIntFromInterval(rand.min, rand.max);
+        if (sample.randomize) {
+          for (const rand of sample.randomize) {
+            const { hasSub, key, subKey } = rand;
+            if (hasSub) {
+              newMock[key] = {
+                ...newMock[key],
+                [subKey]: randomStringFromEnum(rand.enum),
+              };
+            } else {
+              newMock[rand.key] = rand.enum
+                ? randomStringFromEnum(rand.enum)
+                : randomIntFromInterval(rand.min, rand.max);
+            }
           }
         }
-      }
 
-      return newMock;
-    });
+        return newMock;
+      });
 
     setMockedData(mockedData);
   }, []);
