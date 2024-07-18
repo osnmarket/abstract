@@ -1,11 +1,10 @@
+const { themeComponentsMessages } = require('./messages/components');
+const { themePagesMessages } = require('./messages/pages');
+
 module.exports = {
-  name: 'Themeing file',
+  name: 'Theming Colors File',
   themeMessages: {
-    pages: {},
-    components: {
-      header: {
-        sitename: 'Next.js Abstract',
-      },
-    },
+    components: themeComponentsMessages,
+    pages: themePagesMessages,
   },
 };
