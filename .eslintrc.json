@@ -5,6 +5,11 @@
   },
   "rules": {
     "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }],
+    "react-hooks/exhaustive-deps": "off",
+    "react/jsx-key": "off",
     "no-async-promise-executor": "off"
+  },
+  "env": {
+    "jest": true
   }
 }
