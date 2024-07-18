@@ -1,4 +1,4 @@
-import { abstractHandler } from 'abstract-core/handlers';
+import { abstractHandler } from 'osnmarket-abstract-core/handlers';
 
 export default async function handler(req, res) {
   return abstractHandler(req, res);
