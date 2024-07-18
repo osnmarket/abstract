@@ -3,6 +3,6 @@ module.exports = {
   themeComponentsMessages: {
     header: {
       sitename: 'Next.js Abstract',
-    }
-  }
-}
+    },
+  },
+};
